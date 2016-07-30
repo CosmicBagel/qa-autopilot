@@ -3,6 +3,12 @@ VERY Rough draft
 qa-autopilot
 ===
 
+Helps with testing vid games. Record and plays back sessions of input then asks
+the game to check if the end result is correct. Results are logged. It requies the
+game developer to 'write tests' (setup, record inputs, result checking), but once
+this work is done you can have the tests run over night and basically get some 
+affordable and consistent testing done.
+
 Overview
 ---
 
