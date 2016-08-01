@@ -24,11 +24,12 @@ fn main() {
 
         //unconfigured keyboard input
         let mut ip = INPUT {
-           type_: INPUT_KEYBOARD,
-           u: [0; 4],
+            type_: INPUT_KEYBOARD,
+            u: [0; 4],
         };
 
         //configure input struct to press the "A" key
+        //let ki is in it's own scope so that we can borrow ip again in SendInput
         {
             let ki = INPUT::ki_mut(&mut ip);
             ki.wVk = 0x41; // virtual-keycode for the "A" key
